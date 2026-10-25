@@ -1,16 +1,10 @@
 @"
 
-# Environment variables and secrets
-.env
-.env.*
-!.env.example
-
-# Firebase private credentials
-google-services.json
-GoogleService-Info.plist
-service-account*.json
-*serviceAccountKey*.json
-
-# Build and local files
-*.log
+# Ignore generated and dependency folders
+node_modules/
+.expo/
+android/
+ios/
+dist/
+web-build/
 "@ | Add-Content .gitignore
